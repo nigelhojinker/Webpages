@@ -8,7 +8,7 @@
 
 <meta name="author" content="Ho Jin Ker Nigel, Adaikalavan Ramasamy, Gokce Oguz">
 <meta name="dcterms.date" content="2025-12-30">
-<meta name="description" content="Database harmonization between CellChatDB.human(v2.2.0) and CellPhoneDB (V5.0)">
+<meta name="description" content="Database harmonization between CellChatDB.human(v2.2.0) and CellPhoneDB (V5.0.1)">
 
 <title>Database harmonization by scpeakeR - Part 1</title>
 <style>
@@ -2372,7 +2372,7 @@ window.Quarto = {
 
 <div>
   <div class="description">
-    <p>Database harmonization between CellChatDB.human(v2.2.0) and CellPhoneDB (V5.0)</p>
+    <p>Database harmonization between CellChatDB.human(v2.2.0) and CellPhoneDB (V5.0.1)</p>
   </div>
 </div>
 
@@ -2889,7 +2889,7 @@ TGFB2_ACVR1B_TGFBR2 ACVR1B_TGFbR2 P36896_P37173</code></pre>
 <pre><code>[1] &quot;RARRES2_GPR1&quot;</code></pre>
 </div>
 </div>
-<p>We loaded the <a href="https://www.uniprot.org/">uniprotkb</a> database of only reviewed Uniprot IDs to identify interaction partners not successfully mapped.</p>
+<p>We loaded the <a href="https://www.uniprot.org/">UniProtKB</a> database of only reviewed Uniprot IDs to identify interaction partners not successfully mapped.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load Uniprot Database</span></span>
 <span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>uniprotkb <span class="ot">&lt;-</span> <span class="fu">read_tsv</span>(<span class="fu">url</span>(<span class="st">&quot;https://rest.uniprot.org/uniprotkb/stream?download=true&amp;fields=accession%2Cid%2Cprotein_name%2Cgene_names%2Ccc_subcellular_location%2Ccc_pathway%2Clit_pubmed_id%2Cxref_kegg&amp;format=tsv&amp;query=%28*%29+AND+%28reviewed%3Atrue%29+AND+%28model_organism%3A9606%29&quot;</span>)) <span class="sc">%&gt;%</span> </span>
